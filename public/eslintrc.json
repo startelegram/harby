@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended"],
+  "globals": {
+    "showToast": "readonly",
+    "bootstrap": "readonly",
+    "membershipSystem": "readonly",
+    "showMessage": "readonly",
+    "showNotification": "readonly",
+    "cryptoPaymentSystem": "readonly",
+    "sessionManager": "readonly",
+    "Chart": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": ["warn"],
+    "no-undef": "error"
+  }
+}

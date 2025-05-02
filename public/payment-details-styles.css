@@ -1,0 +1,179 @@
+/* أنماط واجهة تفاصيل الدفع المحسنة */
+
+.payment-details-container {
+    background: var(--secondary-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 150, 0.1);
+    border: 1px solid #2a2a3e;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.payment-details-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at bottom left, rgba(0, 255, 150, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+.payment-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a2a3e;
+    padding-bottom: 15px;
+}
+
+.payment-details-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.payment-details-title i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.payment-details-form-group {
+    margin-bottom: 20px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #2a2a3e;
+}
+
+.payment-details-form-group label {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.payment-details-input {
+    background: #2a2a3e;
+    border: 1px solid #3a3a4e;
+    border-radius: 6px;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.payment-details-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+    outline: none;
+}
+
+.payment-details-input:disabled {
+    background: #1a1a2e;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.payment-details-button {
+    background: linear-gradient(135deg, #00ff99, #00cc7a);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.payment-details-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.payment-details-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 150, 0.4);
+}
+
+.payment-details-button:hover::before {
+    left: 100%;
+}
+
+.payment-details-button:active {
+    transform: translateY(1px);
+}
+
+.payment-details-button i {
+    margin-right: 8px;
+}
+
+.payment-details-info {
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.payment-details-info-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.payment-details-info-title i {
+    margin-right: 8px;
+}
+
+.payment-details-info-text {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.blurred-link {
+    filter: blur(3px);
+    transition: filter 0.3s ease;
+}
+
+.blurred-link:hover {
+    filter: blur(0);
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .payment-details-title {
+        font-size: 1.3rem;
+    }
+
+    .payment-details-title i {
+        font-size: 1.5rem;
+    }
+
+    .payment-details-form-group {
+        padding: 10px;
+    }
+}

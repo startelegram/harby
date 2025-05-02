@@ -1,0 +1,301 @@
+/* أنماط واجهة تشفير الملفات المحسنة */
+
+.encryption-container {
+    background: var(--secondary-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2a2a3e;
+    margin-bottom: 20px;
+}
+
+.encryption-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a2a3e;
+    padding-bottom: 15px;
+}
+
+.encryption-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.encryption-title i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.encryption-tabs .nav-tabs {
+    border-bottom: 1px solid #2a2a3e;
+    margin-bottom: 20px;
+}
+
+.encryption-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.encryption-tabs .nav-link {
+    color: #e0e0e0;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.encryption-tabs .nav-link:hover {
+    color: var(--primary-color);
+    border-color: rgba(0, 255, 150, 0.3);
+}
+
+.encryption-tabs .nav-link.active {
+    color: var(--primary-color);
+    background: transparent;
+    border-color: var(--primary-color);
+}
+
+.encryption-form-group {
+    margin-bottom: 20px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #2a2a3e;
+}
+
+.encryption-form-group label {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.encryption-input {
+    background: #2a2a3e;
+    border: 1px solid #3a3a4e;
+    border-radius: 6px;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.encryption-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+    outline: none;
+}
+
+.encryption-textarea {
+    background: #2a2a3e;
+    border: 1px solid #3a3a4e;
+    border-radius: 6px;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    transition: all 0.3s ease;
+    font-family: 'Courier New', monospace;
+}
+
+.encryption-textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+    outline: none;
+}
+
+.encryption-file-input {
+    position: relative;
+}
+
+.encryption-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.encryption-file-label {
+    background: #2a2a3e;
+    border: 1px dashed #3a3a4e;
+    border-radius: 6px;
+    color: #e0e0e0;
+    padding: 30px 15px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encryption-file-label:hover {
+    border-color: var(--primary-color);
+    background: rgba(0, 255, 150, 0.05);
+}
+
+.encryption-file-label i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.encryption-file-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.encryption-button {
+    background: linear-gradient(135deg, #00ff99, #00cc7a);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encryption-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 150, 0.4);
+}
+
+.encryption-button:active {
+    transform: translateY(1px);
+}
+
+.encryption-button i {
+    margin-right: 8px;
+}
+
+.encryption-button.secondary {
+    background: #2a2a3e;
+    color: #e0e0e0;
+    border: 1px solid #3a3a4e;
+}
+
+.encryption-button.secondary:hover {
+    background: #3a3a4e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.encryption-progress {
+    height: 15px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    border: 1px solid #2a2a3e;
+}
+
+.encryption-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00cc7a, #00ff99);
+    border-radius: 8px;
+    transition: width 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    width: 0%;
+}
+
+.encryption-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%
+    );
+    animation: progressShine 2s infinite linear;
+}
+
+@keyframes progressShine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.encryption-result {
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #2a2a3e;
+    margin-top: 20px;
+    display: none;
+}
+
+.encryption-result-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.encryption-result-title i {
+    margin-right: 8px;
+}
+
+.encryption-result-content {
+    background: #0f0f1a;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.encryption-result-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .encryption-title {
+        font-size: 1.3rem;
+    }
+    
+    .encryption-title i {
+        font-size: 1.5rem;
+    }
+    
+    .encryption-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .encryption-file-label {
+        padding: 20px 10px;
+    }
+    
+    .encryption-file-label i {
+        font-size: 2rem;
+    }
+}

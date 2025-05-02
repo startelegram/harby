@@ -1,0 +1,140 @@
+/* إصلاح مشكلة لون النص في تحليل الثغرات والمكافآت والتحديات */
+
+/* إصلاح لون النص في تحليل الثغرات */
+#vulnerability-scanner-modal .modal-body,
+#vulnerability-scanner-modal .modal-body *,
+#vulnerability-scanner-modal .form-check-label,
+#vulnerability-scanner-modal .scan-options label,
+#vulnerability-scanner-modal .scan-type-item,
+#vulnerability-scanner-modal .scan-results-item,
+#vulnerability-scanner-modal .vulnerability-details,
+#vulnerability-scanner-modal .vulnerability-details p,
+#vulnerability-scanner-modal .vulnerability-details h5,
+#vulnerability-scanner-modal .alert,
+#vulnerability-scanner-modal .form-label,
+#vulnerability-scanner-modal .form-text,
+#vulnerability-scanner-modal .list-group-item,
+#vulnerability-scanner-modal .card-title,
+#vulnerability-scanner-modal .card-text,
+#vulnerability-scanner-modal .card-body,
+#vulnerability-scanner-modal .card-header,
+#vulnerability-scanner-modal .card-footer,
+#vulnerability-scanner-modal .tab-content,
+#vulnerability-scanner-modal .tab-pane,
+#vulnerability-scanner-modal .nav-link,
+#vulnerability-scanner-modal .dropdown-item,
+#vulnerability-scanner-modal .table,
+#vulnerability-scanner-modal .table td,
+#vulnerability-scanner-modal .table th,
+#vulnerability-scanner-modal .modal-title,
+#vulnerability-scanner-modal .modal-footer,
+#vulnerability-scanner-modal .modal-header {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في المكافآت والتحديات */
+#rewards-challenges-modal .modal-body,
+#rewards-challenges-modal .modal-body *,
+#rewards-challenges-modal .tab-content,
+#rewards-challenges-modal .card-body,
+#rewards-challenges-modal .card-text,
+#rewards-challenges-modal .card-title,
+#rewards-challenges-modal .card-header,
+#rewards-challenges-modal .card-header h5,
+#rewards-challenges-modal .card-footer,
+#rewards-challenges-modal .alert,
+#rewards-challenges-modal .form-label,
+#rewards-challenges-modal .form-text,
+#rewards-challenges-modal .list-group-item,
+#rewards-challenges-modal .tab-pane,
+#rewards-challenges-modal .nav-link,
+#rewards-challenges-modal .dropdown-item,
+#rewards-challenges-modal .table,
+#rewards-challenges-modal .table td,
+#rewards-challenges-modal .table th,
+#rewards-challenges-modal .modal-title,
+#rewards-challenges-modal .modal-footer,
+#rewards-challenges-modal .modal-header,
+#rewards-challenges-modal .form-check-label,
+#rewards-challenges-modal .challenge-description,
+#rewards-challenges-modal .challenge-content,
+#rewards-challenges-modal .challenge-options,
+#rewards-challenges-modal .reward-item,
+#rewards-challenges-modal .achievement-item {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في تحدي الأمان */
+#security-challenge-modal .modal-body,
+#security-challenge-modal .modal-body *,
+#security-challenge-modal .challenge-content,
+#security-challenge-modal .challenge-description,
+#security-challenge-modal .challenge-options,
+#security-challenge-modal .form-check-label,
+#security-challenge-modal .alert,
+#security-challenge-modal pre,
+#security-challenge-modal code,
+#security-challenge-modal .bg-dark,
+#security-challenge-modal .form-label,
+#security-challenge-modal .form-text,
+#security-challenge-modal .list-group-item,
+#security-challenge-modal .card-title,
+#security-challenge-modal .card-text,
+#security-challenge-modal .card-body,
+#security-challenge-modal .card-header,
+#security-challenge-modal .card-footer,
+#security-challenge-modal .tab-content,
+#security-challenge-modal .tab-pane,
+#security-challenge-modal .nav-link,
+#security-challenge-modal .dropdown-item,
+#security-challenge-modal .table,
+#security-challenge-modal .table td,
+#security-challenge-modal .table th,
+#security-challenge-modal .modal-title,
+#security-challenge-modal .modal-footer,
+#security-challenge-modal .modal-header {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في نافذة تحدي الأمان المنفصلة */
+#challenge-modal .modal-body,
+#challenge-modal .modal-body *,
+#challenge-modal .modal-title,
+#challenge-modal .modal-footer,
+#challenge-modal .modal-header,
+#challenge-modal #challenge-modal-title,
+#challenge-modal #challenge-modal-description,
+#challenge-modal #challenge-modal-points {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في نافذة المكافآت المنفصلة */
+#reward-modal .modal-body,
+#reward-modal .modal-body *,
+#reward-modal .modal-title,
+#reward-modal .modal-footer,
+#reward-modal .modal-header,
+#reward-modal #reward-modal-title,
+#reward-modal #reward-modal-description,
+#reward-modal #reward-modal-points {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في الخلفيات الداكنة */
+.bg-dark, .bg-dark *,
+.modal-content, .modal-content * {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في الكود */
+pre, code {
+    color: #fff !important;
+}
+
+/* إصلاح لون النص في عناصر محددة */
+.challenge-item, .challenge-item *,
+.reward-item, .reward-item *,
+.achievement-item, .achievement-item *,
+.vulnerability-item, .vulnerability-item * {
+    color: #fff !important;
+}
